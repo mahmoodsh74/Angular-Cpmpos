@@ -7,13 +7,14 @@ import {Component} from '@angular/core';
 })
 export class CollectionsHomeComponent {
   data = [
-    {name: 'mahmood', age: '27', job: 'designer'},
-    {name: 'reza', age: '29', job: 'developer'},
-    {name: 'sara', age: '15', job: 'manager'}
+    {name: 'mahmood', age: '27', job: 'designer', employed: true},
+    {name: 'reza', age: '29', job: 'developer', employed: true},
+    {name: 'sara', age: '15', job: 'manager', employed: false}
   ];
-  header = [
-    {key: 'name', value: 'Name'},
-    {key: 'job', value: 'Job'},
-    {key: 'age', value: 'Age'},
+  headers = [
+    {key: 'name', value: 'Name', show: true},
+    {key: 'job', value: 'Job', show: true},
+    {key: 'age', value: 'Age', show: true},
+    {key: 'employed', value: 'Employed', show: false},
   ]
 }
